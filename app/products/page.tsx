@@ -10,75 +10,341 @@ import {
 } from 'lucide-react';
 
 // --- DATA: Product Catalog ---
-const categories = ["All", "Insecticides", "Herbicides", "Fungicides", "Plant Growth Regulators", "Bio-Fertilizers"];
+const categories = ["All", "Insecticides", "Fungicides", "Plant Growth Regulators", "Bio-Fertilizers"];
 
 const products = [
   {
     id: 1,
-    name: "Shinjo",
-    category: "Insecticides",
-    activeIngredient: "Thiamethoxam 25% WG",
-    description: "A broad-spectrum systemic insecticide that provides long-lasting control against sucking pests. Rapid absorption ensures crop safety during monsoon.",
-    features: ["Systemic Action", "Rain Fastness", "Low Dosage"],
-    crops: "Cotton, Paddy, Vegetables",
-    image: "/images/product-bottle-1.jpeg", 
+    name: "Bacilli",
+    category: "Bio-Fertilizers",
+    activeIngredient: "Immunomodulator",
+    description: "Contains beneficial Bacillus bacteria for soil health. Improves root growth and disease resistance.",
+    features: ["soil health", "disease resistance", "root strength"],
+    // crops: "Cotton, Paddy, Vegetables",
+    image: "/images/product-bottle-1a.jpg", 
     isNew: true
   },
   {
     id: 2,
-    name: "Zinc Ultra",
-    category: "Herbicides",
-    activeIngredient: "Glyphosate 41% SL",
-    description: "Non-selective, systemic herbicide for effective control of annual and perennial weeds. Biodegradable and leaves no harmful residue in soil.",
-    features: ["Deep Root Kill", "Soil Friendly", "Quick Action"],
-    crops: "Non-cropped areas, Tea",
-    image: "/images/product-bottle-2.jpeg",
+    name: "Attract",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Mixture of Micro Nutrients",
+    description: "Used to attract pollinators or pests into traps. Improves crop fruit setting indirectly.",
+    features: ["pest attraction", "trap efficiency", "population control"
+],
+    // crops: "Non-cropped areas, Tea",
+    image: "/images/product-bottle-2b.jpg",
     isNew: false
   },
   {
     id: 3,
-    name: "FungiStop X",
-    category: "Fungicides",
-    activeIngredient: "Mancozeb 75% WP",
-    description: "A contact fungicide effective against a wide range of fungal diseases. Enriched with Zinc and Manganese to improve plant health.",
-    features: ["Dual Action", "Preventative", "Nutrient Boost"],
-    crops: "Potato, Tomato, Grapes",
+    name: "Miyaku",
+    category: "Insecticides",
+    activeIngredient: "Agricultural Use",
+    description: "Controls sucking and chewing pests. Commonly used in vegetables and field crops.",
+    features: ["pest control", "quick action", "systemic protection"
+],
+    // crops: "Potato, Tomato, Grapes",
     image: "/images/product-bottle-3.jpg",
     isNew: false
   },
   {
     id: 4,
-    name: "GrowthMax Gold",
+    name: "Shri Gypsum",
     category: "Plant Growth Regulators",
-    activeIngredient: "Gibberellic Acid 0.001% L",
-    description: "Advanced metabolic enhancer that stimulates cell elongation, resulting in larger fruit size and higher overall yield quality.",
-    features: ["Yield Booster", "Fruit Quality", "Stress Tolerance"],
-    crops: "Sugarcane, Paddy, Fruits",
+    activeIngredient: "Gypsum Granuler",
+    description: "Supplies calcium and sulfur to soil. Improves soil structure and reduces salinity",
+    features: ["soil improvement", "calcium supply", "salinity control"],
+    // crops: "Sugarcane, Paddy, Fruits",
     image: "/images/product-bottle-4.jpg",
     isNew: true
   },
   {
     id: 5,
-    name: "RootKing Bio",
-    category: "Bio-Fertilizers",
-    activeIngredient: "Mycorrhiza",
-    description: "Organic root developer that enhances nutrient uptake and water absorption efficiency. Promotes vigorous root system development.",
-    features: ["Organic Certified", "Drought Resistance", "Soil Health"],
-    crops: "All Crops",
+    name: "M Rayza",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Bio Extract Mixture",
+    description: "Enhances root development and early plant growth. Improves nutrient uptake.",
+    features: ["root growth", "nutrient uptake", "early vigor"],
+    // crops: "All Crops",
     image: "/images/product-bottle-5.jpg",
     isNew: false
   },
   {
     id: 6,
-    name: "MiteClear",
+    name: "Bash",
     category: "Insecticides",
-    activeIngredient: "Propargite 57% EC",
+    activeIngredient: "Ferrous Sulphate 19%",
     description: "Specialized acaricide for the control of mites. Acts by contact and fumigant action, effectively breaking the mite resistance cycle.",
-    features: ["Anti-Resistant", "Contact Action", "Immediate Knockdown"],
-    crops: "Tea, Chilli, Brinjal",
+    features: [ "instant knockdown", "pest killing", "rapid control"
+],
+    // crops: "Tea, Chilli, Brinjal",
     image: "/images/product-bottle-6.jpg",
     isNew: false
   },
+
+
+  {
+    id: 7,
+    name: "Sarpanch",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Soil Conditioner",
+    description: "Organic root developer that enhances nutrient uptake and water absorption efficiency. Promotes vigorous root system development.",
+    features: ["growth regulation", "plant strength", "yield enhancement"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-7.jpg",
+    isNew: false
+  },
+
+
+  {
+    id: 8,
+    name: "Grace",
+    category: "Fungicides",
+    activeIngredient: "Micro Nutrient Mixture",
+    description: "Protects crops from fungal diseases. Works as a preventive and curative product.",
+    features: ["fungal protection", "disease prevention", "crop safety"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-8.jpg",
+    isNew: false
+  },
+
+
+  {
+    id: 9,
+    name: "Kisan",
+    category: "Bio-Fertilizers",
+    activeIngredient: "Organic Mixture",
+    description: "Provides essential macro and micro nutrients. Improves overall crop vigor.",
+    features: ["balanced nutrition", "crop vigor", "healthy growth"],
+    // crops: "All Crops",
+    image: "/images/product-bottle-9.jpg",
+    isNew: false
+  },
+
+
+  {
+    id: 10,
+    name: "Kranti",
+    category: "Insecticides",
+    activeIngredient: "Phosphate Rich Organic Mixture",
+    description: "Organic root developer that enhances nutrient uptake and water absorption efficiency. Promotes vigorous root system development.",
+    features: ["broad protection", "pest management", "yield safety"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-10.jpg",
+    isNew: false
+  },
+
+
+  {
+    id: 11,
+    name: "Ujala",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Molasses Granular",
+    description: "Enhances leaf brightness and photosynthesis. Improves crop appearance and yield.",
+    features: ["leaf greening", "shine improvement", "photosynthesis boost"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-11.jpg",
+    isNew: false
+  },
+
+
+  {
+    id: 12,
+    name: "Leaf Ultra",
+    category: "Bio-Fertilizers",
+    activeIngredient: "Bio Extract Mixture",
+    description: "Supplies essential trace elements through leaves. Corrects nutrient deficiencies quickly.",
+    features: ["micronutrient supply", "deficiency correction", "fast absorption"],
+    // crops: "All Crops",
+    image: "/images/product-bottle-12.jpg",
+    isNew: false
+  },
+
+
+  {
+    id: 13,
+    name: "Leaf Pro",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Soil and Plant Booster",
+    description: "Boosts leaf development and chlorophyll formation. Helps in faster vegetative growth.",
+    features: ["vegetative growth", "chlorophyll boost", "leaf strength"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-13.jpg",
+    isNew: false
+  },
+   
+  {
+    id: 14,
+    name: "Trust",
+    category: "Bio-Fertilizers",
+    activeIngredient: "Micro Nutrients",
+    description: "Organic root developer that enhances nutrient uptake and water absorption efficiency. Promotes vigorous root system development.",
+    features: ["soil fertility", "microbial activity", "sustainable growth"],
+    // crops: "All Crops",
+    image: "/images/product-bottle-14.jpg",
+    isNew: false
+  },
+
+  {
+    id: 15,
+    name: "Dhanvarsha",
+    category: "Bio-Fertilizers",
+    activeIngredient: "Potash",
+    description: " Increases flowering and grain filling. Improves final crop yield.",
+    features: ["yield booster", "grain filling", "crop productivity"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-15.jpg",
+    isNew: false
+  },
+
+  {
+    id: 16,
+    name: "Refresh",
+    category: "Insecticides",
+    activeIngredient: "Fe-19% S-10%",
+    description: "Helps crops recover from heat, drought, or pesticide stress. Restores plant vitality",
+    features: ["stress relief", "plant recovery", "vigor restoration"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-16.jpg",
+    isNew: false
+  },
+
+  {
+    id: 17,
+    name: "Dev",
+    category: "Insecticides",
+    activeIngredient: "NPK 19:19:19",
+    description: "Used for controlling major crop pests. Provides long-lasting protection.",
+    features: [ "long protection", "pest control", "residual action"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-17.jpg",
+    isNew: false
+  },
+
+  {
+    id: 18,
+    name: "Enriched",
+    category: "Bio-Fertilizers",
+    activeIngredient: "Mycorrhiza",
+    description: "Contains enriched nutrients for better plant nutrition. Improves crop quality and growth.",
+    features: ["nutrient fortification", "growth improvement", "quality enhancement"
+],
+    crops: "All Crops",
+    image: "/images/product-bottle-18.jpg",
+    isNew: false
+  },
+
+  {
+    id: 19,
+    name: "Fighter",
+    category: "Insecticides",
+    activeIngredient: "Chlorantraniliprole 18.5%",
+    description: "Strong action against resistant pests. Used in severe infestation conditions.",
+    features: ["strong control", "resistance management", "heavy infestation"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-19.jpg",
+    isNew: false
+  },
+
+  {
+    id: 20,
+    name: "Shri-Da Potash",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Bio Potash Liq",
+    description: "Supplies potassium for strong stems and better fruit quality. Improves disease resistance.",
+    features: ["potassium supply", "fruit quality", "stem strength"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-20.jpg",
+    isNew: false
+  },
+
+  {
+    id: 21,
+    name: "Blossam",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Silicon Based Sticker",
+    description: "Promotes flowering and fruit set. Reduces flower drop.Promotes vigorous root system development.",
+    features: ["flower induction", "fruit setting", "drop reduction"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-21.jpg",
+    isNew: false
+  },
+
+  {
+    id: 22,
+    name: "Nitro",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Nitrobenzene 20%",
+    description: "Boosts vegetative growth rapidly. Increases leaf size and greenness. Promotes vigorous root system development.",
+    features: ["nitrogen boost", "leaf growth", "green effect"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-22.jpg",
+    isNew: false
+  },
+
+  {
+    id: 23,
+    name: "Greeny",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Bio Stimultant",
+    description: "Improves chlorophyll content and plant greenness. Enhances photosynthesis efficiency.",
+    features: ["chlorophyll activation", "healthy growth", "lush appearance"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-23.jpg",
+    isNew: false
+  },
+
+  {
+    id: 24,
+    name: "Shinjo",
+    category: "Fungicides",
+    activeIngredient: "Humic Acid 12%",
+    description: " Controls fungal diseases like blight and rot. Protects crop throughout growth.",
+    features: ["fungal control", "disease suppression", "crop protection"
+],
+    // crops: "All Crops",
+    image: "/images/product-bottle-24.jpg",
+    isNew: false
+  },
+
+  {
+    id: 25,
+    name: "Spark",
+    category: "Plant Growth Regulators",
+    activeIngredient: "Micro Nutrient Mixture",
+    description: "Triggers quick plant response and growth. Used during stress or early stages.",
+    features: ["growth stimulation", "early vigor", "quick response"],
+    // crops: "All Crops",
+    image: "/images/product-bottle-25.jpg",
+    isNew: false
+  },
+
+  {
+    id: 26,
+    name: "Starch",
+    category: "Bio-Fertilizers",
+    activeIngredient: "Organic Manure Active Constituent",
+    description: " Helps in carbohydrate formation in plants. Improves grain weight and fruit quality.",
+    features: ["weight enhancement", "quality improvement", "grain filling"],
+    // crops: "All Crops",
+    image: "/images/product-bottle-26.jpg",
+    isNew: false
+  },
+
 ];
 
 export default function ProductsPage() {
@@ -100,13 +366,13 @@ export default function ProductsPage() {
       <section className="relative h-[60vh] min-h-[555px] flex items-center pt-20"> 
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <Image
+          {/* <Image
             src="/images/lab-field-mix.jpg"
             alt="Advanced Agricultural Research"
             fill
             className="object-cover"
             priority
-          />
+          /> */}
           <div className="absolute inset-0 bg-gradient-to-r from-green-950/95 via-green-900/90 to-emerald-900/80" />
         </div>
 
@@ -257,10 +523,10 @@ export default function ProductsPage() {
                       ))}
                     </div>
                     
-                    <div className="flex items-center gap-2 text-xs text-gray-500">
+                    {/* <div className="flex items-center gap-2 text-xs text-gray-500">
                       <Sprout className="w-4 h-4" />
                       <span className="truncate max-w-[150px]">{product.crops}</span>
-                    </div>
+                    </div> */}
                     {/* The "Details" Link has been removed here */}
                   </div>
                 </div>
