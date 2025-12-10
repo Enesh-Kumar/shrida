@@ -51,14 +51,14 @@ export default function FounderPage() {
 
   // Professional Team Data - REPLACE THIS WITH REAL DATA
   const leadershipTeam = [
-    {
-      name: "Abhinav Agarwal",
-      role: "Co-Founder & Head of Research",
-      bio: "Ph.D. in Agro-Chemistry with 20 years of experience in developing sustainable pesticide formulations.",
-      image: "/images/team-1.jpg", // Replace with real image path
-      linkedin: "#",
-      email: "#"
-    },
+    // {
+    //   name: "Abhinav Agarwal",
+    //   role: "Co-Founder & Head of Research",
+    //   bio: "Ph.D. in Agro-Chemistry with 20 years of experience in developing sustainable pesticide formulations.",
+    //   image: "/images/team-1.jpg", // Replace with real image path
+    //   linkedin: "#",
+    //   email: "#"
+    // },
     {
       name: "Anup Singh",
       role: "Director of Operations",
@@ -71,7 +71,7 @@ export default function FounderPage() {
       name: "Sulabh Agarwal",
       role: "Head of Community Relations",
       bio: "Dedicated to bridging the gap between scientific innovation and practical application for farmers.",
-      image: "/images/team-3.jpg",
+      image: "/images/team-1.jpg",
       linkedin: "#",
       email: "#"
     },
@@ -83,22 +83,15 @@ export default function FounderPage() {
       linkedin: "#",
       email: "#"
     },
-    {
-      name: "Harjeet Singh Ludher",
-      role: "Strategic Advisor",
-      bio: "Former policy maker helping navigate the agricultural regulatory landscape.",
-      image: "/images/team-5.jpg",
-      linkedin: "#",
-      email: "#"
-    },
-    {
-      name: "Arjun Mehta",
-      role: "Head of Sustainability",
-      bio: "Ensuring all our chemical solutions meet global environmental safety standards.",
-      image: "/images/team-6.jpg",
-      linkedin: "#",
-      email: "#"
-    }
+
+    // {
+    //   name: "Arjun Mehta",
+    //   role: "Head of Sustainability",
+    //   bio: "Ensuring all our chemical solutions meet global environmental safety standards.",
+    //   image: "/images/team-6.jpg",
+    //   linkedin: "#",
+    //   email: "#"
+    // }
   ];
 
   const values = [
@@ -141,7 +134,7 @@ export default function FounderPage() {
                 <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                   {/* PLACEHOLDER: Founder Image */}
                   <Image
-                    src="/images/founder.jpeg" 
+                    src="/images/founder1.jpg" 
                     alt="Founder - Shri-Da Chemicals"
                     fill
                     className="object-cover"
@@ -179,7 +172,7 @@ export default function FounderPage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 leading-tight">
-                [Founder Name]
+                Harjeet Singh Ludher
               </h1>
               <p className="text-xl sm:text-2xl text-green-600 font-semibold mb-8">
                 Founder & Managing Director
@@ -192,7 +185,7 @@ export default function FounderPage() {
                 Under his leadership, Shri-Da Chemicals has grown from a small startup to a pioneering force in agricultural technology, touching the lives of thousands of farmers across India.
               </p>
 
-              <div className="flex flex-wrap gap-4 mb-8">
+              {/* <div className="flex flex-wrap gap-4 mb-8">
                 <a href="#" className="w-12 h-12 bg-gray-100 hover:bg-green-600 rounded-xl flex items-center justify-center transition-colors duration-300 group">
                   <Linkedin className="w-5 h-5 text-gray-600 group-hover:text-white" />
                 </a>
@@ -202,7 +195,7 @@ export default function FounderPage() {
                 <a href="#" className="w-12 h-12 bg-gray-100 hover:bg-green-600 rounded-xl flex items-center justify-center transition-colors duration-300 group">
                   <Mail className="w-5 h-5 text-gray-600 group-hover:text-white" />
                 </a>
-              </div>
+              </div> */}
 
               <Link
                 href="/query"
@@ -290,7 +283,7 @@ export default function FounderPage() {
                   style={{ transitionDelay: `${i * 100}ms` }}
                 >
                   {/* Image Container */}
-                  <div className="relative h-72 w-full overflow-hidden bg-gray-200">
+                  <div className="relative h-120 w-full overflow-hidden bg-gray-200">
                     <Image
                       src={member.image}
                       alt={member.name}
@@ -298,7 +291,7 @@ export default function FounderPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     {/* Social Overlay on Hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-green-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-green-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
                        <div className="flex gap-3 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">
                          <a href={member.linkedin} className="p-2 bg-white rounded-lg hover:bg-green-500 hover:text-white transition-colors">
                            <Linkedin className="w-5 h-5" />
@@ -307,7 +300,7 @@ export default function FounderPage() {
                            <Mail className="w-5 h-5" />
                          </a>
                        </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Content */}
@@ -399,12 +392,7 @@ export default function FounderPage() {
               Get in Touch
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link
-              href="/about"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white/10"
-            >
-              Our Story
-            </Link>
+            
           </div>
         </div>
       </section>
