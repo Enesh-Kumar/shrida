@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Leaf, Droplets, Shield, Zap, ChevronRight, Play, Sparkles, Target, ChevronUp, X } from 'lucide-react';
+import { Leaf, Droplets, Shield, Zap, ChevronRight, Sparkles, Target, ChevronUp, X } from 'lucide-react';
 
 // Feature Card Component with Mobile Popup
 const FeatureCard = ({ 
@@ -253,16 +253,16 @@ export default function HomePage() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const products = [
-    { name: 'BioGrow Plus', category: 'Growth Enhancer', color: 'from-green-400 to-emerald-600' },
-    { name: 'CropShield Pro', category: 'Pesticide', color: 'from-blue-400 to-cyan-600' },
-    { name: 'NutriMax 360', category: 'Fertilizer', color: 'from-amber-400 to-orange-600' },
-    { name: 'AquaSol Elite', category: 'Water Soluble', color: 'from-teal-400 to-green-600' },
-  ];
+  // const products = [
+  //   { name: 'Shri Gypsum', category: 'Growth Enhancer', color: 'from-green-400 to-emerald-600'},
+  //   { name: 'Miyaku', category: 'Insecticide', color: 'from-blue-400 to-cyan-600' },
+  //   { name: 'Bacilli', category: 'Fertilizer', color: 'from-amber-400 to-orange-600' },
+  //   { name: 'Fighter', category: 'Insecticide', color: 'from-green-400 to-violet-700' }
+  // ];
 
   const stats = [
-    { value: 15, suffix: '+', label: 'Years Experience' },
-    { value: 500, suffix: '+', label: 'Products' },
+    { value: 10, suffix: '+', label: 'Years Experience' },
+    { value: 100, suffix: '+', label: 'Products' },
     { value: 10000, suffix: '+', label: 'Happy Farmers' },
     { value: 25, suffix: '+', label: 'States Covered' },
   ];
@@ -272,7 +272,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-800 via-green-700 to-emerald-700 overflow-hidden"
       >
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -350,15 +350,17 @@ export default function HomePage() {
                   Explore Products
                   <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </Link>
-                <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 text-white rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white/10 hover:border-white/50">
-                  <span className="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full group-hover:bg-white/30 transition-colors">
-                    <Play className="w-4 h-4 fill-current" />
-                  </span>
-                  Watch Our Story
-                </button>
+                <Link
+                  href="/distributor"
+                  className="group inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 text-white rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white/10 hover:border-white/50"
+                >
+                  Become Our Partner
+                  <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Link>
               </div>
             </div>
 
+            
             {/* Right - 3D Drone Visualization */}
             <div className="relative mt-12 lg:mt-0">
               <div className="relative w-full aspect-square">
@@ -451,7 +453,7 @@ export default function HomePage() {
       <FeatureCards />
 
       {/* Products Preview Section */}
-      <section className="py-24 bg-gray-900 relative overflow-hidden">
+      {/* <section className="py-24 bg-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(34,197,94,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(34,197,94,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -496,7 +498,7 @@ export default function HomePage() {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Drone Technology Section */}
       <section className="py-24 bg-gradient-to-b from-green-50 to-white relative overflow-hidden">
