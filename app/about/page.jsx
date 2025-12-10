@@ -96,18 +96,11 @@ export default function AboutPage() {
   const [activeTimeline, setActiveTimeline] = useState(0);
   
   const milestones = [
-    { year: '2010', title: 'Foundation', desc: 'Shri-Da Chemicals was founded with a vision to revolutionize Indian agriculture.' },
-    { year: '2014', title: 'First Product Line', desc: 'Launched our first range of organic fertilizers and growth enhancers.' },
-    { year: '2018', title: 'Drone Integration', desc: 'Pioneered drone-based precision spraying technology in the region.' },
+    { year: '2015', title: 'Foundation', desc: 'Shri-Da Chemicals was founded with a vision to revolutionize Indian agriculture.' },
+    { year: '2018', title: 'First Product Line', desc: 'Launched our first range of organic fertilizers and growth enhancers.' },
+    { year: '2020', title: 'Drone Integration', desc: 'Pioneered drone-based precision spraying technology in the region.' },
     { year: '2022', title: 'National Expansion', desc: 'Expanded operations to 25+ states across India.' },
-    { year: '2024', title: 'AI & Robotics', desc: 'Introduced AI-powered crop analysis and autonomous farming solutions.' },
-  ];
-
-  const values = [
-    { icon: Lightbulb, title: 'Innovation', desc: 'Constantly pushing boundaries with cutting-edge agricultural technology', color: 'from-amber-500 to-orange-600' },
-    { icon: Heart, title: 'Farmer First', desc: 'Every solution designed with the Indian farmer at its core', color: 'from-rose-500 to-pink-600' },
-    { icon: Shield, title: 'Quality', desc: 'Uncompromising standards in every product we create', color: 'from-blue-500 to-indigo-600' },
-    { icon: Globe, title: 'Sustainability', desc: 'Building a greener future through eco-conscious practices', color: 'from-green-500 to-emerald-600' },
+    { year: '2025', title: 'AI & Robotics', desc: 'Introduced AI-powered crop analysis and autonomous farming solutions.' },
   ];
 
  
@@ -162,27 +155,22 @@ export default function AboutPage() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 mb-16 animate-fade-in-up animation-delay-1000">
               <Link
-                href="#story"
+                href="/founder"
                 className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/50 hover:scale-105"
               >
-                Discover Our Journey
+                Meet Our Founder
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <button className="group inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-full font-semibold text-base sm:text-lg transition-all duration-300 hover:bg-white/20">
-                <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                  <Play className="w-4 h-4 fill-white" />
-                </div>
-                Watch Our Story
-              </button>
+              
             </div>
 
             {/* Stats Row */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 animate-fade-in-up animation-delay-1000">
               {[
-                { value: '2010', label: 'Founded' },
+                { value: '2015', label: 'Founded' },
                 { value: '25+', label: 'States' },
                 { value: '10K+', label: 'Farmers' },
-                { value: '500+', label: 'Products' },
+                { value: '100+', label: 'Products' },
               ].map((stat, i) => (
                 <div key={i} className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
@@ -232,7 +220,7 @@ export default function AboutPage() {
               
               {/* Experience Badge */}
               <div className="absolute -bottom-6 -right-6 sm:bottom-4 sm:right-4 bg-gradient-to-br from-green-600 to-emerald-600 text-white p-6 rounded-2xl shadow-2xl">
-                <p className="text-4xl sm:text-5xl font-bold">15+</p>
+                <p className="text-4xl sm:text-5xl font-bold">10+</p>
                 <p className="text-green-100 text-sm">Years of Excellence</p>
               </div>
             </div>
